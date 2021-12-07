@@ -36,12 +36,26 @@ function render() {
     libraryDom.appendChild(div);
   }
 }
+// Fetches data from form
+function fetchData() {
+  if (title === null) {
+    return;
+  } else {
+    let title = document.getElementById("title").value;
+    let author = document.getElementById("author").value;
+    let pagenumber = document.getElementById("pagenumber").value;
+    let readen = document.getElementById("readen").value;
+    addBook(title, author, pagenumber, readen);
+    clearField();
+  }
+}
 
+// Clear input field after adding book
 function clearField() {
   document.getElementById("title").value = "";
   document.getElementById("author").value = "";
-  document.getElementById("pages").value = "";
-  document.getElementById("readen").value = "";
+  document.getElementById("pagenumber").value = "";
+  document.getElementById("readen").checked = false;
 }
 
 // Dropdown menu
