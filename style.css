@@ -8,6 +8,19 @@ main {
   max-width: 1200px;
   margin: 0 auto;
 }
+input,
+input[type="number"] {
+  resize: horizontal;
+  width: 150px;
+  margin-bottom: 5px;
+}
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -57,4 +70,14 @@ main {
 .cardFooter {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#dropdown {
+  position: absolute;
+  background-color: chartreuse;
+  margin-top: 6px;
+  margin-right: 10px;
+  width: 180px;
+  right: 0;
+  border-radius: 10px;
 }

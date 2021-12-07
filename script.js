@@ -1,5 +1,6 @@
 let library = [];
 let libraryDom = document.getElementById("library");
+let menuState = 0;
 
 //Object constructor
 function Book(title, author, pages, readen) {
@@ -33,5 +34,23 @@ function render() {
     </div>
     `;
     libraryDom.appendChild(div);
+  }
+}
+
+function clearField() {
+  document.getElementById("title").value = "";
+  document.getElementById("author").value = "";
+  document.getElementById("pages").value = "";
+  document.getElementById("readen").value = "";
+}
+
+// Dropdown menu
+function dropDown() {
+  if (menuState == 0) {
+    document.getElementById("dropdown").style.display = "block";
+    menuState = 1;
+  } else if (menuState == 1) {
+    document.getElementById("dropdown").style.display = "none";
+    menuState = 0;
   }
 }
