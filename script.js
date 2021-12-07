@@ -27,10 +27,8 @@ function render() {
     div.innerHTML = `
     <div class="bookCard">
     <div class="cardHeader">${library[i].title}</div>
-    <div class="cardInfo">Author: ${library[i].author}</br>page: ${
-      library[i].pages
-    }</div>
-    <div class="cardFooter">${library[i].readen ? "Read" : "Not Read"}</div>
+    <div class="cardInfo">Author: ${library[i].author}</br>page: ${library[i].pages}</div>
+    <div class="cardFooter">${library[i].readen}</div>
     </div>
     `;
     libraryDom.appendChild(div);
@@ -56,7 +54,7 @@ function clearField() {
   document.getElementById("title").value = "";
   document.getElementById("author").value = "";
   document.getElementById("pagenumber").value = "";
-  document.getElementById("readen").checked = false;
+  document.getElementById("readen").checked = "";
 }
 
 // Dropdown menu
