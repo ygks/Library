@@ -24,11 +24,12 @@ function addBook(newTitle, newAuthor, newPages, newReaden) {
 function render() {
   for (let i = 0; i < library.length; i++) {
     let div = document.createElement("div");
+    let read = library[i].readen ? "Read" : "Not Read";
     div.innerHTML = `
     <div class="bookCard">
     <div class="cardHeader">${library[i].title}</div>
     <div class="cardInfo">Author: ${library[i].author}</br>page: ${library[i].pages}</div>
-    <div class="cardFooter">${library[i].readen}</div>
+    <div class="cardFooter">${read}</div>
     </div>
     `;
     libraryDom.appendChild(div);
@@ -39,7 +40,7 @@ function fetchData() {
   let title = document.getElementById("title").value;
   let author = document.getElementById("author").value;
   let pagenumber = document.getElementById("pagenumber").value;
-  let readen = document.getElementById("readen").value;
+  let readen = document.getElementById("readen").checked;
 
   if (title === "" || author === "" || pagenumber === "") {
     return;
