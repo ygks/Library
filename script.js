@@ -38,13 +38,14 @@ function render() {
 }
 // Fetches data from form
 function fetchData() {
-  if (title === null) {
+  let title = document.getElementById("title").value;
+  let author = document.getElementById("author").value;
+  let pagenumber = document.getElementById("pagenumber").value;
+  let readen = document.getElementById("readen").value;
+
+  if (title === "" || author === "" || pagenumber === "") {
     return;
   } else {
-    let title = document.getElementById("title").value;
-    let author = document.getElementById("author").value;
-    let pagenumber = document.getElementById("pagenumber").value;
-    let readen = document.getElementById("readen").value;
     addBook(title, author, pagenumber, readen);
     clearField();
   }
