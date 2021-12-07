@@ -17,17 +17,35 @@
 
 <div class="header">
     <div class="logo">Book Library</div>
-    <button id="addbook">Add Book</button>
+    <button id="addbook" onclick="dropDown()">Add Book</button>
+</div>
+
+<div id="dropdown" style="display: none;">
+  <form>
+    <label for="title">Title: </label></br>
+    <input id="title" type="text" size="1" required>
+    
+    <label for="author">Author :</label></br>
+    <input id="author" type="text" size="1" required>
+    
+    <label for="pagenumber">Pages: </label></br>
+    <input id="pagenumber" type="number" size="1" required>
+
+    <label for="readen">Read State: </label>
+    <input id="readen" type="checkbox">
+
+    <button class="addbutton" onclick="clearField()">Add</button>
+  </form>
 </div>
 
 
         <main>
             <div id="library">
-                <div class="bookCard">
+                <!-- <div class="bookCard">
                     <div class="cardHeader">Game of Thrones</div>
                     <div class="cardInfo">Author: </br>page:</div>
                     <div class="cardFooter">Read</div>
-                </div>   
+                </div>    -->
             </div>
         </main>
   </body>
