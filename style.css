@@ -1,0 +1,60 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: lightblue;
+}
+.logo {
+  font-size: 36px;
+}
+
+#library {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 40px;
+}
+.bookCard {
+  display: flex;
+  flex-flow: column;
+  align-content: stretch;
+  min-width: 150px;
+  width: 100%;
+}
+.cardHeader {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  background-color: #faa;
+  border-radius: 10px 10px 0 0;
+}
+.cardInfo {
+  display: flex;
+  align-items: center;
+  min-height: 79px;
+  background-color: #afa;
+}
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 60px;
+  background-color: #aaf;
+  border-radius: 0 0 10px 10px;
+}
+.cardHeader,
+.cardInfo,
+.cardFooter {
+  padding-left: 10px;
+  padding-right: 10px;
+}
