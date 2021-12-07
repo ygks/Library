@@ -27,7 +27,10 @@ function render() {
     let read = library[i].readen ? "Read" : "Not Read";
     div.innerHTML = `
     <div class="bookCard">
-    <div class="cardHeader">${library[i].title}</div>
+    <div class="cardHeader">
+    ${library[i].title}
+    <button onclick="deleteBook(${i})" class="deleteButton">X</button>
+    </div>
     <div class="cardInfo">Author: ${library[i].author}</br>page: ${library[i].pages}</div>
     <div class="cardFooter">${read}</div>
     </div>
@@ -56,6 +59,13 @@ function clearField() {
   document.getElementById("author").value = "";
   document.getElementById("pagenumber").value = "";
   document.getElementById("readen").checked = "";
+}
+
+// Deletes book from array
+function deleteBook(i) {
+  library.splice(i, 1);
+  libraryDom.innerHTML = "";
+  render();
 }
 
 // Dropdown menu
