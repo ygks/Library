@@ -12,17 +12,19 @@ main {
 input,
 input[type="number"] {
   border: none;
-  background-color: #52a59f;
+  color: #cee5f2;
+  background-color: #637081;
   border-radius: 8px;
   resize: horizontal;
+  height: 25px;
   width: 170px;
   min-width: 100px;
-  margin-bottom: 5px;
 }
 button {
   border: none;
-  background-color: #52a59f;
+  background-color: #cee5f2;
   padding: 8px;
+  border-radius: 8px;
 }
 form {
   display: flex;
@@ -30,9 +32,6 @@ form {
   align-items: center;
   justify-content: center;
   margin: 10px 0 10px 0;
-}
-button {
-  border-radius: 8px;
 }
 a {
   text-decoration: none;
@@ -66,14 +65,14 @@ a {
   display: flex;
   align-items: center;
   min-height: 60px;
-  background-color: #ff6b6b;
+  background-color: #accbe1;
   border-radius: 10px 10px 0 0;
 }
 .cardInfo {
   display: flex;
   align-items: center;
   min-height: 79px;
-  background-color: #ffe66d;
+  background-color: #7c98b3;
 }
 .cardFooter {
   display: flex;
@@ -81,7 +80,7 @@ a {
   min-height: 60px;
   justify-content: space-between;
   color: beige;
-  background-color: #292f36;
+  background-color: #637081;
   border-radius: 0 0 10px 10px;
 }
 .cardHeader {
@@ -97,7 +96,7 @@ a {
 
 #dropdown {
   position: absolute;
-  background-color: #4ecdc4;
+  background-color: #7c98b3;
   margin-top: 10px;
   margin-right: 10px;
   padding: 10px;
@@ -114,7 +113,9 @@ a {
   padding: 15px;
 }
 .deleteButton {
-  background-color: #d04e4e;
+  background-color: #cee5f2;
+  height: 30px;
+  width: 30px;
 }
 .footer {
   display: flex;
