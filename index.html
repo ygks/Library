@@ -15,6 +15,13 @@
     <body>
 <div class="header">
     <div class="logo">Book Library</div>
+    <form>
+      <!-- <select name="" id="">
+        <option value=""></option>
+        <option value="name-desc">Name Descending</option>
+        <option value="name-asc">Name Ascending</option>
+      </select>
+    </form> -->
     <button id="addbook" onclick="dropDown();">Add Book</button>
 </div>
 
@@ -29,23 +36,14 @@
     <label for="pagenumber">Pages: </label></br>
     <input id="pagenumber" type="number" size="1" required>
 
-    <label for="readen">Read State: </label>
-    <input id="readen" type="checkbox" value="Read">
+    <label style="display: inline-block;" for="readen">Read State: </label>
+    <input style="display: inline-block;" id="readen" type="checkbox" value="Read">
 
     <button class="addbutton" onclick="fetchData()">Add</button>
   </form>
 </div>
         <main>
-            <div id="library">
-                <!-- <div class="bookCard">
-                    <div class="cardHeader">
-                      George Orwell
-                        <a href="" class="">X</a>
-                    </div>
-                    <div class="cardInfo">Author: 132</br>page: 874363</div>
-                    <div class="cardFooter">Read</div>
-                </div> -->
-            </div>
+            <div id="library"></div>
         </main>
   </body>
   <script src="/script.js"></script>
