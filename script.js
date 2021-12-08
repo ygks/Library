@@ -35,6 +35,7 @@ function render() {
     <div class="cardFooter">${read}</div>
     </div>
     `;
+
     libraryDom.appendChild(div);
   }
 }
